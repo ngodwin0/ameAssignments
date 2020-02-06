@@ -1,2 +1,2 @@
 # ameAssignments
-These are my assignments for AME@@)
+These are my assignments for AME220
