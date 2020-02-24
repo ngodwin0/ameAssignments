@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Montserrat+Subrayada|Ultra&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box
+}
+body {
+  font-family:'Abril Fatface';
+  margin:1;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5b4f0c8d89c17294e53d4ffc/1559733041481-JNBJKVQ60F6O0W0ALF8C/ke17ZwdGBToddI8pDm48kLxnK526YWAH1qleWz-y7AFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVFUQAah1E2d0qOFNma4CJuw0VgyloEfPuSsyFRoaaKT76QvevUbj177dmcMs1F0H-0/dynamic-style.png);
+  
+}
+.title {
+  position: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Montserrat Subrayada';
+
+}
+.mySlides {
+  display: block;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-box {
+  max-width: 800px;
+  position: center;
+  margin: auto;
+  border-radius: 5px;
+  border: 10px solid #cfcfcf;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #cfcfcf;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Montserrat Subrayada';
+  
+}
+</style>
+</head>
+<body>
+
+  <div class="title">
+    <h1>Picture Slideshow</h1>
+  </div>
+
+<div class="slideshow-box">
+
+<div class="mySlides">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg" style="width:100%">
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <button class="button" onclick="currentSlide(1), backgroundSlides(1)">1</button> 
+  <button class="button" onclick="currentSlide(2), backgroundSlides(2)">2</button> 
+  <button class="button" onclick="currentSlide(3), backgroundSlides(3)">3</button> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+  
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var buttons = document.getElementsByClassName("buttons");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < buttons.length; i++) {
+      buttons[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html> 
+
