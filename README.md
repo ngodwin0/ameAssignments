@@ -1,10 +1,19 @@
-## Welcome to GitHub Pages
+## Welcome to my portfolio
+
+Throughout this page you can find my work over the course of AME220.
+
+The assignments that will be provided on this website are:
+
+- Assignment 3: Resume
+- Assignment 4: Accordian Resume
+- Assignment 5: JavaScript Slide Show
 
 You can use the [editor on GitHub](https://github.com/ngodwin0/ameAssignments/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Assignment 3: Resume
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
